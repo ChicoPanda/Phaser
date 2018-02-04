@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="js/phaser.js" type="text/javascript"></script>
+        <script src="js/Enemigo_uno.js" type="text/javascript"></script>
+        <script src="js/juego.js" type="text/javascript"></script>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/Estilos.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <h2 class="titulo sombra letras"> SPIRITE </h2>
+
+        <div class="contendor">
+            <div class="panel">
+                <div class="formulario">
+                    <h2 class="letras">Formulario</h2>                
+                    <label>Nombre</label>
+                    <input id="TBnombre" placeholder="Nombre" type="text">
+                    <select id="dificultad">
+                        <option value="1">Facil</option>
+                        <option value="2">Medio</option>
+                        <option value="3">IMPOSIBLE</option>
+                    </select>
+
+                    <input id="jugar" type="button" value="Jugar">
+
+
+
+                </div>
+                <div class="formulario">
+                    <h2 class="letras" style="font-size: 20px;">Golpes </h2>
+                    <p id="golpes">0</p>
+                    <h2 class="letras" style="font-size: 20px;">Enemigos muertos  </h2>
+                    <p id="muertos">0</p>
+                     
+
+                    <div class="scoreActual">
+                        <h2 class="letras" style="font-size: 20px;">Total</h2>
+                        <p id="total"></p> 
+                    </div>
+                    <div class="viadas">
+                        <h2 class="letras" style="font-size: 50px;">Vidas</h2>
+                        <img id="vida1" src="fondos/vida.png" alt=""  />
+                        <img id="vida2" src="fondos/vida.png" alt=""  />
+                        <img id="vida3" src="fondos/vida.png" alt=""  />
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div id="frame"></div>  
+        </div> 
+    </body>
+</html>
